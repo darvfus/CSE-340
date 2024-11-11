@@ -38,7 +38,8 @@ ALTER TABLE IF EXISTS public.inventory
     ON UPDATE CASCADE
     ON DELETE NO ACTION;
 
-CREATE TABLE IF NOT EXISTS public.account
+CREATE TYPE account_type AS ENUM ('Client', 'Admin');
+
 
     -- Table structure for table `account`
 CREATE TABLE IF NOT EXISTS public.account
