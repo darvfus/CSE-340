@@ -2,10 +2,10 @@
 
 -- DROP TYPE IF EXISTS public.equipo03cse340;
 
-CREATE TYPE public.equipo03cse340 AS ENUM
+CREATE TYPE public.team03cse340 AS ENUM
     ('Client', 'Employee', 'Admin');
 
-ALTER TYPE public.equipo03cse340
+ALTER TYPE public.team03cse340
     OWNER TO cse340drv;
     --Table structure for table 'classification'
 CREATE TABLE public.classification (

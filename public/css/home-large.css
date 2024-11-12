@@ -24,6 +24,25 @@
         grid-template-columns: 1fr 1fr;
         padding: 10px 20px
     }
+    /* Display inventory and details page in gridview */
+    #inv-display {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    #inv-display li {
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
+    }
+
+    #detail-display li {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #updateForms {
+        grid-template-columns: 1fr 1fr;
+    }
 
  
 
