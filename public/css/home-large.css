@@ -7,7 +7,7 @@
     /* refactor body dimensions for larger view */
     body {
         background-color: white;
-        max-width: 1400px;
+        max-width: 900px;
         margin: 20px auto;
         border: 5px solid rgb(85, 65, 196);
         border-radius: 15px;

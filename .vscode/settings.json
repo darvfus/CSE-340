@@ -9,11 +9,8 @@
             "previewLimit": 50,
             "server": "localhost",
             "driver": "PostgreSQL",
-            "name": "cse340dr_7kmo",
-            "database": "cse340dr_7kmo",
-            "username": "cse340dr",
-            "password": "s3wV70hNU8T4S0dNNMRRfGbkDYWz5UK2",
-            "connectString": "postgresql://cse340dr:s3wV70hNU8T4S0dNNMRRfGbkDYWz5UK2@dpg-csobf89u0jms7395b26g-a.ohio-postgres.render.com/cse340dr_7kmo"
+            "name": "cse340drv Database",
+            "connectString": "postgresql://cse340drv:FIBq2E43Qmi9cVLdYiZEBWLsglQvRvK1@dpg-csocpa1u0jms7395rh0g-a.ohio-postgres.render.com/cse340drv_5l9r"
         }
     ]
 }
