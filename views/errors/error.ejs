@@ -1,0 +1,12 @@
+<section id="err">
+    <% if (title) { %>
+        <h1 id="errTitle"><%= title %></h1>
+        <% } else {
+          res.redirect('/')
+    } %>
+    
+    <p><%- message %></p>
+    
+    </section>
+    
+    
