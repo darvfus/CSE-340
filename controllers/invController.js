@@ -19,4 +19,21 @@ invCont.buildByClassificationId = async function (req, res, next) {
   })
 }
 
+/* ***************************
+ *  Build Vehicle details by detail view
+ * ************************** */
+invCont.buildByInvId = async function (req, res, next) {
+  console.log("invoked");
+  const inv_id = req.params.invId;
+  const data = await invModel.getDetailByInvId(inv_id);
+  const grid = await utilities.buildDetailGrid(data);
+  console.log("vontroller: ", data);
+  let nav = await utilities.getNav();
+  const vehicleName = data[0].inv_make;
+  res.render("./inventory/detail", {
+    title: vehicleName,
+    nav,
+    grid,
+  });
+};
 module.exports = invCont;
