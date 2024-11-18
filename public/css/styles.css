@@ -173,3 +173,101 @@
   text-align: center;
   color: aliceblue;
 }
+/* 404 Page */
+#err {
+  height: 400px;
+  background-color: yellow;
+  text-align: center;
+  font-style: italic;
+}
+/* Managemnet View */
+#welcome {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button{
+  padding: 10px 10px;
+  margin: 10px 10px;
+  border-radius: 15px;
+  background-image: linear-gradient(rgb(255, 255, 0), rgb(255, 138, 5));
+}
+
+button:hover{
+  background-image: linear-gradient(rgb(255, 138, 5), rgb(255, 255, 0));
+  font-size: 14px;
+}
+
+/* forms */
+form {
+  margin: 1rem 2%;
+  border: 2px purple solid;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#updateForms {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: first baseline;
+}
+
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  color: purple;
+  padding-top: 0.2rem;
+}
+
+input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  select {
+    display: block;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3d405b;
+    width: 250px;
+  }
+  
+  input:required {
+    border-left-color: #d70000;
+  }
+  input:focus {
+    border-left-color: black;
+    outline: none;
+  }
+  input:required:valid {
+    border-left-color: green;
+  }
+  
+  input[type="submit"] {
+    border: none;
+    text-align: center;
+    background-color: #3d405b;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #3d405b;
+  }
+
+  p a {
+    text-decoration: underline;
+  }
