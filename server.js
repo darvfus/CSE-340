@@ -18,6 +18,9 @@ const accountRoute = require("./routes/accountRoute")
 const inventoryRoute = require("./routes/inventoryRoute")
 const utilities = require("./utilities/")
 
+const cookieParser = require("cookie-parser")
+
+
 /* ***********************
  * Middleware
  * ************************/
@@ -46,7 +49,10 @@ app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-
 app.set("view engine", "ejs")
 app.use(expressLayouts)
 app.set("layout", "./layouts/layout") // not at views root
-
+// cookie parser
+app.use(cookieParser())
+// check JWT token
+app.use(utilities.checkJWTToken)
 /* ***********************
  * Routes
  *************************/
